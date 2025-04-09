@@ -1,0 +1,22 @@
+D:\FastAPI\blog\
+    ├── main.py            # The entry point of the FastAPI app. It connects everything and starts the server.
+    ├── models.py          # Defines the database tables using SQLAlchemy.
+    ├── database.py        # Manages the database connection.
+    ├── schemas.py         # Defines data validation rules using Pydantic.
+    ├── hashing.py         # Handles password hashing and verification.
+    ├── token.py           # Creates and verifies JWT tokens for authentication.
+    ├── oauth2.py          # Handles authentication using OAuth2 and JWT tokens.
+    ├── __init__.py        # Marks this directory as a package (required for Python imports).
+    │
+    ├── repository\        # Contains business logic (database queries & operations)
+    │   ├── __init__.py    
+    │   ├── blog.py        # Handles all blog-related database queries (create, update, delete, get).
+    │   ├── user.py        # Handles all user-related database queries (create user, get user).
+    │
+    ├── routers\           # Contains API route handlers
+    │   ├── __init__.py    
+    │   ├── blog.py        # Defines all blog-related API endpoints.
+    │   ├── user.py        # Defines all user-related API endpoints.
+    │   ├── authentication.py  # Handles login, token generation, and authentication.
+    │
+    ├── __pycache__\       # Auto-generated cache files (Python stores compiled code here for faster execution).
